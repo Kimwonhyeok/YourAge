@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다음 앞자리는??</title>
+    <link rel="stylesheet" href="yourAge.css">
+</head>
+
+<body>
+    <header>
+        <div class="headBox">
+            <div class="logo">
+                <h2>Home</h2>
+            </div>
+        </div>
+        <div class="menuBox">
+            <div class="userAge">당신의 나이</div>
+            <div class="userDateCalculation">앞으로 며칠?</div>
+        </div>
+    </header>
+    <div class="hamburger">
+        <input type="checkbox" id="checkPoint">
+        <label for="checkPoint" class="clickCheck">
+            <span id="bar1"></span>
+            <span id="bar2"></span>
+            <span id="bar3"></span>
+        </label>
+    </div>
+    <article>
+        <div class="mainBox">
+            <strong>당신의 나이는???</strong>
+            <div class="userInputInfo">
+                <input type="text" name="userAge" id="userAgeInput" placeholder="나이를 입력해주세요!">
+                <input type="submit" onclick="userAgeObj.userSubmitEvent()"value="나이전송!">
+            </div>
+            <strong>태어난 지...<i></i></strong>
+            <p id="lifeDay">년</p>
+            <p><strong id="goalAge">x</strong>살까지<i id="years"></i> <i id="day"></i><i id="hour"></i><i id="min"></i><i id="sec"></i> 남았다니.</p>
+        </div>
+    </article>
+
+    <script defer src="yourAge.js"></script>
+</body>
+
+</html>
